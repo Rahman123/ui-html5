@@ -132,6 +132,9 @@
                     joinUrl: [ location.protocol, '//', location.host, location.pathname ].join(''),
                     platform: {
                          uri: 'https://flow.manywho.com'
+                    },
+                    i18n: {
+                        culture: queryParameters['culture'],
                     }
                 });
 
@@ -177,7 +180,8 @@
                     queryParameters['join'],
                     queryParameters['authorization'],
                     options,
-                    queryParameters['initialization']
+                    queryParameters['initialization'],
+                    queryParameters['culture']
                 );
 
             }
